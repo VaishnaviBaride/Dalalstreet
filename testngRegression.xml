@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RegressSuite">
+ <listeners>
+  			<listener class-name="comqaUtility.ListenerSetup"/>
+  			<listener class-name="comqaUtility.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="RegressTest">
+  <classes>
+      <class name="comqaTestdata.TradingExecution"/>
+    </classes>
+  </test> <!-- RegressTest -->
+</suite> <!-- RegressSuite -->
